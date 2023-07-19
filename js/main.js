@@ -10,8 +10,21 @@ const app = Vue.createApp({
   data() {
     return {
       message: "Hello Vue!",
-      titleRed: "text-danger"
+      userName: "Andrea Colombo",
+      titleRed: "text-danger",
+      imgHelloThere: 'hellothere.PNG',
+      showImage: false,
+      imageURL: ""
     }
+  },
+  methods: {
+    btnActive() {
+      console.log("Benvenuto nel mondo di VueJS, " + this.userName);
+      this.titleRed = "text-primary";
+      this.message = "Hello There!";
+      this.showImage = true;
+      this.imageURL = `../img/${this.imgHelloThere}`;
+    },  
   }
 }).mount("#app")
 
