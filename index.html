@@ -35,7 +35,9 @@
                 </div>
               </div>
             </div>
-            <h2 class="mx-3 my-3">Benvenuto, {{ userName }}</h2>
+            <div class="card bg-light text-center" v-bind:class="titleBlue">
+              <h2 class="mx-3 my-3">Benvenuto, {{ userName }}</h2>
+            </div>  
           </div>
           <div class="col-md-6">
             <img alt="" v-bind:src="imageURL" id="hello-there"

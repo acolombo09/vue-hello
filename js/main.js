@@ -12,6 +12,7 @@ const app = Vue.createApp({
       message: "Hello Vue!",
       userName: "Andrea Colombo",
       titleRed: "text-danger",
+      titleBlue: "text-primary",
       imgHelloThere: 'hellothere.PNG',
       showImage: false,
       imageURL: "",
@@ -26,6 +27,7 @@ const app = Vue.createApp({
     btnActive() {
       console.log("Benvenuto nel mondo di VueJS, " + this.userName);
       this.titleRed = "text-primary";
+      this.titleBlue = "text-success";
       this.message = "Hello There!";
       this.showImage = true;
       this.imageURL = `./img/${this.imgHelloThere}`;
