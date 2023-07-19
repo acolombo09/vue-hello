@@ -23,7 +23,7 @@ const app = Vue.createApp({
       this.titleRed = "text-primary";
       this.message = "Hello There!";
       this.showImage = true;
-      this.imageURL = `../img/${this.imgHelloThere}`;
+      this.imageURL = `./img/${this.imgHelloThere}`;
     },  
   }
 }).mount("#app")
