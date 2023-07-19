@@ -18,7 +18,7 @@
 <body>
   <div id="app">
     <main>
-      <div class="container-fluid">
+      <div class="container-fluid my-5">
         <div class="row">
           <div class="col-md-4">
             <div class="card text-center">
@@ -38,7 +38,12 @@
             <h2 class="mx-3 my-3">Benvenuto, {{ userName }}</h2>
           </div>
           <div class="col-md-6">
-            <img v-bind:src="imageURL" alt="Immagine VueJS">
+            <img v-bind:src="imageURL" alt="Immagine VueJS"
+              v-bind:data-mdb-toggle="imageAnimation" 
+              v-bind:data-mdb-animation-start="animationStart"
+              v-bind:data-mdb-animation="animationType" 
+              v-bind:data-mdb-animation-reset="animationReset" 
+              v-bind:style="animationStyle">
           </div>
         </div>
       </div>

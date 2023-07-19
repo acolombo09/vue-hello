@@ -14,7 +14,12 @@ const app = Vue.createApp({
       titleRed: "text-danger",
       imgHelloThere: 'hellothere.PNG',
       showImage: false,
-      imageURL: ""
+      imageURL: "",
+      imageAnimation: "",
+      animationType: "",
+      animationReset: "",
+      animationStyle: "",
+      animationStart: ""
     }
   },
   methods: {
@@ -24,6 +29,11 @@ const app = Vue.createApp({
       this.message = "Hello There!";
       this.showImage = true;
       this.imageURL = `./img/${this.imgHelloThere}`;
+      this.imageAnimation = "animation";
+      this.animationType = "fade-in-down";
+      this.animationReset = "true";
+      this.animationStyle = "animation-duration: 3000ms;";
+      this.animationStart = "onLoad";
     },  
   }
 }).mount("#app")
